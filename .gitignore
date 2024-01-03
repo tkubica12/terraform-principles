@@ -32,5 +32,5 @@ override.tf.json
 # Ignore CLI configuration files
 .terraformrc
 terraform.rc
-sharing_data_between_roots/stage1/.terraform.lock.hcl
-sharing_data_between_roots/stage2/.terraform.lock.hcl
+
+.terraform.lock.hcl
