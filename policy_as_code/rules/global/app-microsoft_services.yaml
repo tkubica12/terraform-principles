@@ -1,0 +1,21 @@
+name: Microsoft services
+priority: 1000
+rules:
+  arm:
+    protocols:
+      Https:
+        port: 443
+    destination_fqdns:
+      - "management.azure.com"
+  aad_login:
+    protocols:
+      Https:
+        port: 443
+    destination_fqdns:
+      - "login.microsoftonline.com"
+  aad_management:
+    protocols:
+      Https:
+        port: 443
+    destination_fqdns:
+      - "graph.windows.net"

@@ -1,0 +1,11 @@
+name: Management
+priority: 100
+group_rules:
+  sap_apis:
+    protocols: ["TCP"]
+    source_ip_groups:
+      - "jump_servers"
+    destination_ports:
+      - "22"
+      - "3389"
+ip_rules: []

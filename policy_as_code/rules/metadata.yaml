@@ -1,0 +1,23 @@
+projects:
+  global:
+    ranges: ["10.0.0.0/16"]
+    firewall_priority: 100
+  onprem:
+    ranges:  ["10.99.0.0/16", "192.168.0.0/18"]
+    firewall_priority: 101
+  shared_services:
+    ranges: ["10.0.254.0/24"]
+    firewall_priority: 201
+  jump_servers:
+    ranges: ["10.0.253.0/24"]
+    firewall_priority: 202
+  erp:
+    ranges: ["10.0.1.0/24"]
+    firewall_priority: 203
+  crm:
+    ranges: ["10.0.2.0/24"]
+    firewall_priority: 204
+  website:
+    ranges: ["10.0.3.0/24"]
+    firewall_priority: 205
+

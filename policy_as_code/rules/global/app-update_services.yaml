@@ -1,0 +1,37 @@
+name: Azure services
+priority: 1001
+rules:
+  ubuntu:
+    protocols:
+      Http:
+        port: 80
+      Https:
+        port: 443
+    destination_fqdns:
+      - "security.ubuntu.com"
+      - "archive.ubuntu.com"
+  centos:
+    protocols:
+      Https:
+        port: 443
+    destination_fqdns:
+      - "dl.fedoraproject.org"
+      - "mirrors.fedoraproject.org"
+      - "download.fedoraproject.org"
+  microsoft:
+    protocols:
+      Http:
+        port: 80
+      Https:
+        port: 443
+    destination_fqdns:
+      - "windowsupdate.microsoft.com"
+      - "*.windowsupdate.microsoft.com"
+      - "update.microsoft.com"
+      - "*.update.microsoft.com"
+      - "windowsupdate.com"
+      - "*.windowsupdate.com"
+      - "download.microsoft.com"
+      - "*.download.microsoft.com"
+      - "go.microsoft.com"
+      

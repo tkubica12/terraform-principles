@@ -1,0 +1,10 @@
+name: DNS services
+priority: 101
+group_rules:
+  dns:
+    protocols: ["TCP", "UDP"]
+    source_ip_groups:
+      - "global"
+    destination_ports:
+      - "53"
+ip_rules: []

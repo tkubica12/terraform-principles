@@ -1,0 +1,11 @@
+name: SAP APIs
+priority: 101
+group_rules:
+  sap_apis:
+    protocols: ["TCP"]
+    source_ip_groups:
+      - "crm"
+    destination_ports:
+      - "443"
+      - "*"
+ip_rules: []

@@ -1,0 +1,34 @@
+name: Active Directory services
+priority: 100
+group_rules:
+  ad_services_groups:
+    protocols: ["TCP"]
+    source_ip_groups:
+      - "crm"
+      - "erp"
+    destination_ports:
+      - "123"
+      - "135"
+      - "464"
+      - "49152-65535"
+      - "389"
+      - "3268"
+      - "3269"
+      - "88"
+      - "445"
+ip_rules:
+  ad_services_ips:
+    protocols: ["TCP"]
+    source_ranges:
+      - "10.5.4.3/32"
+      - "10.6.1.0/26"
+    destination_ports:
+      - "123"
+      - "135"
+      - "464"
+      - "49152-65535"
+      - "389"
+      - "3268"
+      - "3269"
+      - "88"
+      - "445"

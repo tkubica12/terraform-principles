@@ -1,0 +1,19 @@
+name: Best blogs
+priority: 1002
+rules:
+  tomaskubica:
+    protocols:
+      Https:
+        port: 443
+    destination_fqdns:
+      - "tomaskubica.cz"
+  community:
+    protocols:
+      Http:
+        port: 80
+      Https:
+        port: 443
+    destination_fqdns:
+      - "*.site1.com"
+      - "*.site2.com"
+      - "*.site3.com"
