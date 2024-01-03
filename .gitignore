@@ -33,3 +33,4 @@ override.tf.json
 .terraformrc
 terraform.rc
 sharing_data_between_roots/stage1/.terraform.lock.hcl
+sharing_data_between_roots/stage2/.terraform.lock.hcl

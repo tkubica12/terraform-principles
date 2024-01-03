@@ -1,3 +1,5 @@
 "hub_vnet_id": "/subscriptions/d3b7888f-c26e-4961-a976-ff9d5b31dfd3/resourceGroups/rg-tfmultiroot-stage1/providers/Microsoft.Network/virtualNetworks/vnet-multiroot-hub"
 "hub_vnet_name": "vnet-multiroot-hub"
 "hub_vnet_rg_name": "rg-tfmultiroot-stage1"
+"kv_id": "/subscriptions/d3b7888f-c26e-4961-a976-ff9d5b31dfd3/resourceGroups/rg-tfmultiroot-stage1/providers/Microsoft.KeyVault/vaults/pmvsasdprtrb"
+"kv_secret_name": "mysecret"

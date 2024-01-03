@@ -46,7 +46,32 @@ You should be running Terraform from CI/CD pipeline, so you can than take this f
 Than you may just reference this in information in other root module (stage2 in my case).
 
 ```hcl
+variable "stage1_runtime_yaml" {
+  type = string
+  default = "sharing_data_between_roots/stage1/stage1_runtime.yaml"
+}
 
+data "github_repository" "tkubica12" {
+  full_name = "tkubica12/terraform-principles"
+}
+
+data "github_repository_file" "stage1_runtime" {
+  repository          = data.github_repository.tkubica12.name
+  branch              = "main"
+  file                = var.stage1_runtime_yaml
+}
+
+locals {
+  stage1_runtime = yamldecode(data.github_repository_file.stage1_runtime.content)
+}
+
+resource "azurerm_resource_group" "main" {
+  name     = "rg-tfmultiroot-stage2"
+  location = "swedencentral"
+  tags = {
+    "hub_vnet_id" = local.stage1_runtime.hub_vnet_id   # This is info from stage1 root
+  }
+}
 ```
 
 

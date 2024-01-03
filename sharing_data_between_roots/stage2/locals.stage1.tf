@@ -3,9 +3,9 @@ data "github_repository" "tkubica12" {
 }
 
 data "github_repository_file" "stage1_runtime" {
-  repository          = github_repository.tkubica12.name
+  repository          = data.github_repository.tkubica12.name
   branch              = "main"
-  file                = "shareing_data_between_roots/stage1/stage1_runtime.yaml"
+  file                = var.stage1_runtime_yaml
 }
 
 locals {
