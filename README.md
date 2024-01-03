@@ -11,6 +11,8 @@
 
 **Key principles:**
 - [Abstractions and interfaces](./abstractions_and_interfaces/README.md)
+- [Sharing data between roots](./sharing_data_between_roots/README.md)
+- [Develop stateless helper modules](./helper_modules/README.md)
 - Separate manifests as multi-tool single source of truth
 - Accessing data between instances and systems
 - [GitOps processes](./gitops/README.md)
