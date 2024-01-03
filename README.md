@@ -13,7 +13,7 @@
 - [Abstractions and interfaces](./abstractions_and_interfaces/README.md)
 - [Sharing data between roots](./sharing_data_between_roots/README.md)
 - [Develop stateless helper modules](./helper_modules/README.md)
-- Separate manifests as multi-tool single source of truth
+- [Separate manifests as multi-tool single source of truth](./manifests/README.md)
 - [GitOps processes](./gitops/README.md)
 - Policy as Code
 - Documentation as Code
