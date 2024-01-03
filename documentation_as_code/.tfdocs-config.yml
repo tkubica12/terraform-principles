@@ -6,9 +6,9 @@ formatter: "markdown document" # this is required
 
 version: "~> 0.17.0"
 
-# recursive:
-#   enabled: true
-#   path: modules
+recursive:
+  enabled: true
+  path: modules
 
 sections:
   hide: []
@@ -34,8 +34,8 @@ content: |-
   <!-- markdownlint-enable -->
   {{ .Footer }}
 
-header-from: "./_REAMDE_header.md"
-footer-from: "./_README_footer.md"
+header-from: "_README_header.md"
+footer-from: "_README_footer.md"
 
 output:
   file: ./README.md

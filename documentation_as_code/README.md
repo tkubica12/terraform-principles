@@ -113,10 +113,10 @@ The following outputs are exported:
 
 Description: List of SQL server names. Example:
 
-    sql\_server\_names = [
-        "sql-1",
-        "sql-2",
-    ]
+sql\_server\_names = [
+    "sql-1",
+    "sql-2",
+]
 
 <!-- markdownlint-enable -->
 <!-- END_TF_DOCS -->
