@@ -15,5 +15,6 @@
 - [Separate manifests as multi-tool single source of truth](./manifests/README.md)
 - [Sharing data between roots](./sharing_data_between_roots/README.md)
 - [GitOps processes](./gitops/README.md)
-- Policy as Code
+- [Policy as Code](./policy_as_code/README.md)
 - [Documentation as Code](./documentation_as_code/README.md)
+- [AzureRM vs. AzApi providers](./azurerm_vs_azapi_providers/README.md)

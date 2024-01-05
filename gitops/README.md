@@ -45,3 +45,6 @@ flowchart TD
     tfplantest -. stored plan .-> deploytest[/Deploy to test env/];
     tfplanprod -. stored plan .-> deployprod[/Deploy to production - manuall trigger/];
 ```
+
+## Automated testing
+People typically use 3rd party tool Terratest, own scripting or lately new testing feature of Terraform - see tests folder in this repo.
