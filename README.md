@@ -18,3 +18,4 @@
 - [Policy as Code](./policy_as_code/README.md)
 - [Documentation as Code](./documentation_as_code/README.md)
 - [AzureRM vs. AzApi providers](./azurerm_vs_azapi_providers/README.md)
+- [Terraform together with other tools](./terraform_with_other_tools/README.md)
