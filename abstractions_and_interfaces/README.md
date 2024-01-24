@@ -98,12 +98,12 @@ How to achieve this?
   - Allows for evolution and customizations
   - Not DRY, can be hard to maintain changes if you have a lot of environments
 - Use tools to "copy" and maintain code between environments
-  - Terragrunt tools - not part of standard Terraform approach, but nice and clean
+  - Terragrunt tools - not part of standard Terraform approach, but nice and clean - see [env_terragrunt](./env_terragrunt/) folder for example
   - Git-based solutions such as GitFlow branching - becomes very complex and hard to maintain especially for non-dev teams
-- Make this module itself and provide inheritance
+- Make this module itself and provide inheritance - see [env_nested_module](./env_nested_module/) folder for example
   - DRY and clean
   - Harder to understand some tools do not provide visibility for nested modules
-
+  
 ```mermaid
 flowchart TD;
     subgraph module[Project environments]

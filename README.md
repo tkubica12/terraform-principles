@@ -11,6 +11,7 @@
 
 **Key principles:**
 - [Abstractions and interfaces](./abstractions_and_interfaces/README.md)
+- [Landing zone layers](./landing_zone_layers/README.md)
 - [Develop stateless helper modules](./helper_modules/README.md)
 - [Separate manifests as multi-tool single source of truth](./manifests/README.md)
 - [Sharing data between roots](./sharing_data_between_roots/README.md)

@@ -1,5 +1,5 @@
 terraform {
-    source = "../../"
+  source = "../../"
 }
 
 locals {
@@ -11,9 +11,9 @@ inputs = {
 }
 
 generate "provider" {
-  path = "provider.tf"
+  path      = "provider.tf"
   if_exists = "overwrite_terragrunt"
-  contents = <<EOF
+  contents  = <<EOF
 terraform {
   required_providers {
     azurerm = {
@@ -31,6 +31,9 @@ provider "azurerm" {
   features {
     key_vault {
       purge_soft_delete_on_destroy = true
+    }
+    resource_group {
+       prevent_deletion_if_contains_resources = false
     }
   }
 }
